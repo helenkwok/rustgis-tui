@@ -1,0 +1,10 @@
+{
+  "name": "rustgis-tui",
+  "version": "0.1.0",
+  "description": "RustGIS in a Claude Code pane: rustgis-tui's layers, panels and real map picture, driven by you with keys and mouse and by Claude with its screen and send tools, in the same running app.",
+  "author": {
+    "name": "Helen Kwok"
+  },
+  "license": "MIT",
+  "types": "./types/index.d.ts"
+}
