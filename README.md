@@ -1,4 +1,4 @@
-<p align="center"><img src="docs/screenshots/overview.png" alt="rustgis-tui: the Layers list, the world map with Countries highlighted in magenta and the other layers dimmed, the scale and a scale bar on the map's border, and the Details tab for Countries" width="100%"></p>
+<p align="center"><img src="docs/screenshots/banner.png" alt="rustgis-tui, a terminal UI and Claude Code mod: RustGIS in your terminal, layers, the real map, every tool, and a pane you and Claude drive together" width="100%"></p>
 
 <h1 align="center">rustgis-tui</h1>
 
@@ -39,6 +39,12 @@ Claude drives the same running app with its own tools.
    [Try it from a clone](#-try-it-from-a-clone).
 
 ## ✨ Features
+
+<p align="center"><img src="docs/screenshots/demo-tour.gif" alt="Tour: four layers with their colours; Rivers chosen and highlighted; Lakes chosen; a click on Lake Victoria lists what is there; the wheel zooms in on East Africa; the Lakes attribute table; the command palette searching buffer" width="100%"></p>
+
+<p align="center"><sub>Choose a layer and it lights up on the map, click to see what is there, zoom where you point, then the attribute table and the palette.</sub></p>
+
+<p align="center"><img src="docs/screenshots/overview.png" alt="The screen: each layer has its own colour, the chosen layer is highlighted on the map, the scale and a scale bar sit on the map's border, and the panel shows details, messages and attributes" width="100%"></p>
 
 - **The map as a real picture** in Ghostty, kitty, WezTerm and iTerm2 (half blocks elsewhere, and always inside tmux),
   drawn by RustGIS at the pane's exact size. The pointer's longitude and latitude, the scale and a scale bar sit on the
@@ -116,6 +122,10 @@ picture laid over the map area.
 
 The pane needs a terminal with kitty graphics and unicode placeholders for the picture: Ghostty or kitty.
 
+<p align="center"><img src="docs/screenshots/demo-together.gif" alt="The pane: you click Countries and open the map full screen; Claude sends Up Up Up to choose Cities, then 3 for the cities table" width="100%"></p>
+
+<p align="center"><sub>You click and type; Claude sends keys with its <code>send</code> tool; both go to the same running app.</sub></p>
+
 ## 🧠 How it works
 
 - **One RustGIS, through MCP.** rustgis-tui starts `rustgis-cli mcp` and talks to it over stdio: the same command
@@ -155,7 +165,8 @@ Checks:
     claude plugin test claude-mod
     python3 docs/tools/screenshots.py             # redraw the README screenshots (needs Pillow)
 
-The screenshots are drawn from serve-mode frames, the same ones the pane shows, not captured from a terminal.
+The images are drawn from serve-mode frames, the same ones the pane shows, not captured from a terminal; the window
+frame and the orange notes are added.
 
 ## ❓ FAQ
 
